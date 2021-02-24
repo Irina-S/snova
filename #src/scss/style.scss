@@ -1,0 +1,112 @@
+@import "_mixins.scss";
+@import "_values.scss";
+@import "_UI.scss";
+@import "_index.scss";
+
+.main-nav-btn{
+    display: none;
+}
+
+.adv{
+    position: relative;
+    background-image: url('../img/adv-slider-bg.png'), url('../img/dotted-pattern-rose.png');
+    background-repeat: no-repeat;
+    background-position: top 100px left 0, top 0 left 5px;
+    background-blend-mode: overlay;
+    margin-top: 56px;
+    max-height: 625px;
+
+    &__inner{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title{
+        text-align: left;
+        margin-bottom: 4px;
+        margin-top: 220px;
+        font-size: 50px;
+
+        &::after{
+            display: none;
+        }
+    }
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-slider{
+        top: -436px;
+        right: calc(-33% + 4px);
+        position: relative;
+        width:77%;
+        height: 450px;
+
+        .slick-slide{
+            // width:370px !important;
+            outline: none;
+            // margin:0 10px;
+        }
+
+        &__nav{
+            display: flex;
+            margin-top: 46px;
+
+            .slick-arrow{
+                border: none;
+                outline: none;
+                background-color: #fff;
+                width: 100px;
+                height: 65px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all .3s;
+
+                &:hover{
+                    background-color: #F06A72;
+                    cursor: pointer;
+
+                    path{
+                        fill:#fff;
+                    }
+                }
+            }
+
+            .slick-prev{
+                border-radius: 50px 0px 0px 50px;
+                position: relative;
+
+                &::after{
+                    content: "";
+                    background-color: #ECECEC;
+                    height: 25px;
+                    width: 1px;
+                    position: absolute;
+                    left: 100%;
+                }
+            }
+
+            .slick-next{
+                border-radius: 0px 50px 50px 0px;
+            }
+        }
+
+        
+    }
+}
+
+.close-btn{
+    display: none;
+    border:none;
+    background: none;
+    outline: none;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+
