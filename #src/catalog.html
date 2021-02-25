@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ru">
+    @@include('_head.html')
+    <body>
+        <div class="outer-wrapper">
+            @@include('_header.html')
+
+            <main class="main">
+                <div class="wrapper">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Главная</a></li>
+                        <li class="breadcrumbs__item">Контакты</li>
+                    </ul>
+
+                    <h1 class="page-title">Каталог тканей</h1>
+
+                    <div class="inner-wrapper">
+                        <aside class="aside">
+                            <form action="" class="filters">
+                                <div class="filters__range">
+                                    <div class="filter__title">Цена:</div>
+                                    <input type="hidden" name="price-from" id="price-from">
+                                    <input type="hidden" name="price-to" id="price-to">
+                                    <div class="range__values">
+                                        <div class="range__from">
+                                            от
+                                            <span></span>
+                                        </div>
+                                        <div class="range__to">
+                                            до
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="range"></div>
+                                </div>
+                                <div class="filters__checkbox">
+                                    <div class="filter__title">Lorem ipsum dolor</div>
+                                    <input type="checkbox" name="checkbox-group" id="opt-1">
+                                    <label for="opt-1">Lorem ipsum dolor</label>
+                                    <input type="checkbox" name="checkbox-group" id="opt-2">
+                                    <label for="opt-2">Sit amet, consectetur </label>
+                                    <input type="checkbox" name="checkbox-group" id="opt-3">
+                                    <label for="opt-3">Adipiscing elit sed</label>
+                                    <input type="checkbox" name="checkbox-group" id="opt-4">
+                                    <label for="opt-4">Do eiusmod tempor </label>
+                                    <input type="checkbox" name="checkbox-group" id="opt-5">
+                                    <label for="opt-5">Incididunt</label>
+                                </div>
+                                <div class="filters__checkbox">
+                                    <div class="filter__title">Lorem ipsum dolor</div>
+                                    <input type="checkbox" name="checkbox-group-2" id="opt-11">
+                                    <label class="round" for="opt-11">Lorem ipsum dolor</label>
+                                    <input type="checkbox" name="checkbox-group-2" id="opt-22">
+                                    <label class="round" for="opt-22">Sit amet, consectetur </label>
+                                    <input type="checkbox" name="checkbox-group-2" id="opt-33">
+                                    <label class="round" for="opt-33">Adipiscing elit sed</label>
+                                    <input type="checkbox" name="checkbox-group-2" id="opt-44">
+                                    <label class="round" for="opt-44">Do eiusmod tempor </label>
+                                    <input type="checkbox" name="checkbox-group-2" id="opt-55">
+                                    <label class="round" for="opt-55">Incididunt</label>
+                                </div>
+                                <div class="filters__select">
+                                    <div class="filter__title">Lorem ipsum dolor</div>
+                                    <select class="filter-select" name="select-group" id="">
+                                        <option value="">Lorem ipsum dolor</option>
+                                        <option value="">Lorem ipsum dolor</option>
+                                        <option value="">Lorem ipsum dolor</option>
+                                        <option value="">Lorem ipsum dolor</option>
+                                        <option value="">Lorem ipsum dolor</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </aside>
+
+                        <div class="inner-wrapper__content">
+                            <div class="filters-sort">
+                                <div class="filters__horizontal">
+
+                                </div>
+
+                                <div class="sort">
+                                    <span>Сортировка:</span>
+                                    <select name="sort" id="">
+                                        <option value="">по умолчанию</option>
+                                        <option value="">по цене</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="catalog">
+                                <ul class="catalog__list">
+                                    <li class="main-catalog__item">
+                                        <div class="photo">
+                                            <img src="./img/product1.jpg" alt="">
+                                        </div>
+                                        <div class="info">
+                                            <div class="title-price">
+                                            <div class="title">Медведи на синем</div>
+                                            <div class="price-block">
+                                                <div class="price">400 ₽ / м.п.</div>
+                                            </div>
+                                            </div>
+                                            <form action="">
+                                                <button>
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2.00001 23H22C22.1433 23 22.285 22.9692 22.4154 22.9097C22.5458 22.8502 22.6619 22.7633 22.7557 22.655C22.8496 22.5467 22.9191 22.4195 22.9596 22.282C23 22.1445 23.0104 21.9999 22.99 21.858L20.99 7.858C20.9558 7.6198 20.8369 7.40191 20.6551 7.24431C20.4732 7.08671 20.2406 6.99997 20 7H17V6C17 4.67392 16.4732 3.40215 15.5355 2.46447C14.5979 1.52678 13.3261 1 12 1C10.6739 1 9.40216 1.52678 8.46448 2.46447C7.5268 3.40215 7.00001 4.67392 7.00001 6V7H4.00001C3.75937 6.99997 3.52679 7.08671 3.34495 7.24431C3.1631 7.40191 3.04418 7.6198 3.01001 7.858L1.01001 21.858C0.989658 21.9999 1.00004 22.1445 1.04046 22.282C1.08088 22.4195 1.15039 22.5467 1.24428 22.655C1.33816 22.7633 1.45424 22.8502 1.58463 22.9097C1.71502 22.9692 1.85668 23 2.00001 23ZM9.00001 6C9.00001 5.20435 9.31608 4.44129 9.87869 3.87868C10.4413 3.31607 11.2044 3 12 3C12.7957 3 13.5587 3.31607 14.1213 3.87868C14.6839 4.44129 15 5.20435 15 6V7H9.00001V6ZM4.86701 9H7.00001V12C7.00001 12.2652 7.10537 12.5196 7.2929 12.7071C7.48044 12.8946 7.7348 13 8.00001 13C8.26523 13 8.51958 12.8946 8.70712 12.7071C8.89465 12.5196 9.00001 12.2652 9.00001 12V9H15V12C15 12.2652 15.1054 12.5196 15.2929 12.7071C15.4804 12.8946 15.7348 13 16 13C16.2652 13 16.5196 12.8946 16.7071 12.7071C16.8947 12.5196 17 12.2652 17 12V9H19.133L20.847 21H3.15301L4.86701 9Z" fill="#DF444D"/>
+                                                    </svg>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </li>
+
+                                    <li class="main-catalog__item">
+                                        <div class="photo">
+                                            <img src="./img/product1.jpg" alt="">
+                                        </div>
+                                        <div class="info">
+                                            <div class="title-price">
+                                            <div class="title">Медведи на синем</div>
+                                            <div class="price-block">
+                                                <div class="price">400 ₽ / м.п.</div>
+                                            </div>
+                                            </div>
+                                            <form action="">
+                                                <button>
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2.00001 23H22C22.1433 23 22.285 22.9692 22.4154 22.9097C22.5458 22.8502 22.6619 22.7633 22.7557 22.655C22.8496 22.5467 22.9191 22.4195 22.9596 22.282C23 22.1445 23.0104 21.9999 22.99 21.858L20.99 7.858C20.9558 7.6198 20.8369 7.40191 20.6551 7.24431C20.4732 7.08671 20.2406 6.99997 20 7H17V6C17 4.67392 16.4732 3.40215 15.5355 2.46447C14.5979 1.52678 13.3261 1 12 1C10.6739 1 9.40216 1.52678 8.46448 2.46447C7.5268 3.40215 7.00001 4.67392 7.00001 6V7H4.00001C3.75937 6.99997 3.52679 7.08671 3.34495 7.24431C3.1631 7.40191 3.04418 7.6198 3.01001 7.858L1.01001 21.858C0.989658 21.9999 1.00004 22.1445 1.04046 22.282C1.08088 22.4195 1.15039 22.5467 1.24428 22.655C1.33816 22.7633 1.45424 22.8502 1.58463 22.9097C1.71502 22.9692 1.85668 23 2.00001 23ZM9.00001 6C9.00001 5.20435 9.31608 4.44129 9.87869 3.87868C10.4413 3.31607 11.2044 3 12 3C12.7957 3 13.5587 3.31607 14.1213 3.87868C14.6839 4.44129 15 5.20435 15 6V7H9.00001V6ZM4.86701 9H7.00001V12C7.00001 12.2652 7.10537 12.5196 7.2929 12.7071C7.48044 12.8946 7.7348 13 8.00001 13C8.26523 13 8.51958 12.8946 8.70712 12.7071C8.89465 12.5196 9.00001 12.2652 9.00001 12V9H15V12C15 12.2652 15.1054 12.5196 15.2929 12.7071C15.4804 12.8946 15.7348 13 16 13C16.2652 13 16.5196 12.8946 16.7071 12.7071C16.8947 12.5196 17 12.2652 17 12V9H19.133L20.847 21H3.15301L4.86701 9Z" fill="#DF444D"/>
+                                                    </svg>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="main-catalog__item">
+                                        <div class="photo">
+                                            <img src="./img/product1.jpg" alt="">
+                                        </div>
+                                        <div class="info">
+                                            <div class="title-price">
+                                            <div class="title">Медведи на синем</div>
+                                            <div class="price-block">
+                                                <div class="price">400 ₽ / м.п.</div>
+                                            </div>
+                                            </div>
+                                            <form action="">
+                                                <button>
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2.00001 23H22C22.1433 23 22.285 22.9692 22.4154 22.9097C22.5458 22.8502 22.6619 22.7633 22.7557 22.655C22.8496 22.5467 22.9191 22.4195 22.9596 22.282C23 22.1445 23.0104 21.9999 22.99 21.858L20.99 7.858C20.9558 7.6198 20.8369 7.40191 20.6551 7.24431C20.4732 7.08671 20.2406 6.99997 20 7H17V6C17 4.67392 16.4732 3.40215 15.5355 2.46447C14.5979 1.52678 13.3261 1 12 1C10.6739 1 9.40216 1.52678 8.46448 2.46447C7.5268 3.40215 7.00001 4.67392 7.00001 6V7H4.00001C3.75937 6.99997 3.52679 7.08671 3.34495 7.24431C3.1631 7.40191 3.04418 7.6198 3.01001 7.858L1.01001 21.858C0.989658 21.9999 1.00004 22.1445 1.04046 22.282C1.08088 22.4195 1.15039 22.5467 1.24428 22.655C1.33816 22.7633 1.45424 22.8502 1.58463 22.9097C1.71502 22.9692 1.85668 23 2.00001 23ZM9.00001 6C9.00001 5.20435 9.31608 4.44129 9.87869 3.87868C10.4413 3.31607 11.2044 3 12 3C12.7957 3 13.5587 3.31607 14.1213 3.87868C14.6839 4.44129 15 5.20435 15 6V7H9.00001V6ZM4.86701 9H7.00001V12C7.00001 12.2652 7.10537 12.5196 7.2929 12.7071C7.48044 12.8946 7.7348 13 8.00001 13C8.26523 13 8.51958 12.8946 8.70712 12.7071C8.89465 12.5196 9.00001 12.2652 9.00001 12V9H15V12C15 12.2652 15.1054 12.5196 15.2929 12.7071C15.4804 12.8946 15.7348 13 16 13C16.2652 13 16.5196 12.8946 16.7071 12.7071C16.8947 12.5196 17 12.2652 17 12V9H19.133L20.847 21H3.15301L4.86701 9Z" fill="#DF444D"/>
+                                                    </svg>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </li>
+
+                                    <li class="main-catalog__item">
+                                        <div class="photo">
+                                            <img src="./img/product1.jpg" alt="">
+                                        </div>
+                                        <div class="info">
+                                            <div class="title-price">
+                                            <div class="title">Медведи на синем</div>
+                                            <div class="price-block">
+                                                <div class="price">400 ₽ / м.п.</div>
+                                            </div>
+                                            </div>
+                                            <form action="">
+                                                <button>
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2.00001 23H22C22.1433 23 22.285 22.9692 22.4154 22.9097C22.5458 22.8502 22.6619 22.7633 22.7557 22.655C22.8496 22.5467 22.9191 22.4195 22.9596 22.282C23 22.1445 23.0104 21.9999 22.99 21.858L20.99 7.858C20.9558 7.6198 20.8369 7.40191 20.6551 7.24431C20.4732 7.08671 20.2406 6.99997 20 7H17V6C17 4.67392 16.4732 3.40215 15.5355 2.46447C14.5979 1.52678 13.3261 1 12 1C10.6739 1 9.40216 1.52678 8.46448 2.46447C7.5268 3.40215 7.00001 4.67392 7.00001 6V7H4.00001C3.75937 6.99997 3.52679 7.08671 3.34495 7.24431C3.1631 7.40191 3.04418 7.6198 3.01001 7.858L1.01001 21.858C0.989658 21.9999 1.00004 22.1445 1.04046 22.282C1.08088 22.4195 1.15039 22.5467 1.24428 22.655C1.33816 22.7633 1.45424 22.8502 1.58463 22.9097C1.71502 22.9692 1.85668 23 2.00001 23ZM9.00001 6C9.00001 5.20435 9.31608 4.44129 9.87869 3.87868C10.4413 3.31607 11.2044 3 12 3C12.7957 3 13.5587 3.31607 14.1213 3.87868C14.6839 4.44129 15 5.20435 15 6V7H9.00001V6ZM4.86701 9H7.00001V12C7.00001 12.2652 7.10537 12.5196 7.2929 12.7071C7.48044 12.8946 7.7348 13 8.00001 13C8.26523 13 8.51958 12.8946 8.70712 12.7071C8.89465 12.5196 9.00001 12.2652 9.00001 12V9H15V12C15 12.2652 15.1054 12.5196 15.2929 12.7071C15.4804 12.8946 15.7348 13 16 13C16.2652 13 16.5196 12.8946 16.7071 12.7071C16.8947 12.5196 17 12.2652 17 12V9H19.133L20.847 21H3.15301L4.86701 9Z" fill="#DF444D"/>
+                                                    </svg>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="catalog__see-more"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+        
+        @@include('_footer.html')
+        @@include('_scripts.html')
+    </body>
+</html>

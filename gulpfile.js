@@ -11,7 +11,7 @@ let path = {
     },
     src:{
         html: [source_folder+"/*.html", "!"+source_folder+"/_*.html"],
-        css:source_folder+"/scss/*.scss",
+        css:source_folder+"/scss/*.+(scss|css)",
         js:source_folder+"/js/*.js",
         img:source_folder+"/img/**/*.+(png|jpg|jpeg|gif|ico|svg|webp)",
         fonts:source_folder+"/fonts/**/*.*",
@@ -20,7 +20,7 @@ let path = {
     // То что нужно слушать постоянно
     watch:{
         html: source_folder+"/**/*.html",
-        css:source_folder+"/scss/**/*.scss",
+        css:source_folder+"/scss/**/*.+(scss|css)",
         js:source_folder+"/js/**/*.js",
         img:source_folder+"/img/**/*.+(png|jpg|jpeg|gif|ico|svg|webp)"
     },

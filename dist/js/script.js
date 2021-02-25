@@ -129,5 +129,30 @@ $(document).ready(function () {
     $('.img2-block img').removeClass('visible');
     $(`#${leftImgId}`).addClass('visible');
     $(`#${rightImgId}`).addClass('visible');
-  })
+  });
+
+  // SELECT В ФИЛЬТРАХ
+  $('.filter-select').niceSelect();
+
+  // ПОЛЗУНОК В ФИЛЬТРАХ
+  $( ".range" ).slider({
+    range: true,
+    min:0,
+    max:5000,
+    values:[500, 2000],
+    slide: function( event, ui ) {
+      setRangeValues();
+    }
+  });
+
+  function setRangeValues(){
+    // console.log($( ".range" ).slider( "values", 0 ));
+    $('.range__from span').text(`${$( ".range" ).slider( "values", 0 )} Р`);
+    $('.range__to span').text(`${$( ".range" ).slider( "values", 1 )} Р`);
+    $('#price-from').val(`${$( ".range" ).slider( "values", 0 )}`);
+    $('#price-to').val(`${$( ".range" ).slider( "values", 1 )}`);
+  }
+
+  setRangeValues();
+  
 });
