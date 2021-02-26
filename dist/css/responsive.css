@@ -121,6 +121,22 @@
         -ms-flex: 330px 0 0px;
             flex: 330px 0 0;
   }
+
+  .catalog .main-catalog__item {
+    -webkit-box-flex: calc(50% - 20px * 1 / 2);
+        -ms-flex: calc(50% - 20px * 1 / 2);
+            flex: calc(50% - 20px * 1 / 2);
+    margin-right: 20px;
+  }
+
+  .catalog .main-catalog__item:nth-child(3n),
+  .catalog .main-catalog__item:nth-child(4n) {
+    margin-right: 20px;
+  }
+
+  .catalog .main-catalog__item:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 1350px) {
@@ -138,6 +154,12 @@
 }
 
 @media (max-width: 1199px) {
+  body {
+    background-image: url("../img/dotted-pattern-rose.png");
+    background-position: left 0 top 176px;
+    background-size: auto;
+  }
+
   .wrapper {
     width: 960px;
   }
@@ -172,6 +194,10 @@
     position: absolute;
     top: 20px;
     right: 20px;
+  }
+
+  .main {
+    margin-top: 100px;
   }
 
   .main-nav {
@@ -353,6 +379,36 @@
   .contacts_item--shedule {
     margin-left: 88px;
   }
+
+  .catalog .main-catalog__item .photo {
+    width: 255px;
+  }
+
+  .catalog .main-catalog__item .photo img {
+    width: 255px;
+  }
+
+  .filters-list {
+    margin-bottom: 20px;
+  }
+
+  .filters-sort {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .sort {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
 }
 
 @media (max-width: 991px) {
@@ -420,9 +476,54 @@
   .contacts_item--shedule {
     margin-left: 60px;
   }
+
+  .inner-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .inner-wrapper__content {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .aside {
+    width: 100%;
+  }
+
+  .filters {
+    display: none;
+  }
+
+  .filters__show-btn {
+    display: block;
+  }
+
+  .filter-select {
+    width: 100%;
+  }
+
+  .catalog .main-catalog__item .photo,
+  .catalog .main-catalog__item .photo img {
+    width: 300px;
+  }
+
+  .range.ui-widget.ui-widget-content {
+    width: 100%;
+  }
+
+  .range__values {
+    margin: 0 auto 20px;
+  }
 }
 
 @media (max-width: 767px) {
+  body {
+    background: none;
+  }
+
   .wrapper {
     width: 540px;
   }
@@ -558,11 +659,17 @@
   .contacts_item {
     font-size: 12px;
   }
+
+  .catalog .main-catalog__item .photo,
+  .catalog .main-catalog__item .photo img {
+    width: 225px;
+  }
 }
 
 @media (max-width: 575px) {
   .wrapper {
     width: 100%;
+    padding: 0 15px;
   }
 
   .section-title {
@@ -747,6 +854,19 @@
   .web-studio {
     margin-top: 10px;
   }
+
+  .catalog .main-catalog__item {
+    margin: 0 20px 30px 0;
+  }
+
+  .catalog .main-catalog__item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .catalog .main-catalog__item .photo,
+  .catalog .main-catalog__item .photo img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 460px) {
@@ -784,6 +904,18 @@
   .lang-list a {
     margin: 2px;
     font-size: 12px;
+  }
+
+  .catalog .main-catalog__item {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100% 0 0px;
+            flex: 100% 0 0;
+    margin: 0 0 30px 0;
+  }
+
+  .sort {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 

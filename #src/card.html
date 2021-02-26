@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+    @@include('_head.html')
+    <body>
+        <div class="outer-wrapper">
+            @@include('_header.html')
+
+            <main class="main">
+                <div class="wrapper">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Главная</a></li>
+                        <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Каталог тканей</a></li>
+                        <li class="breadcrumbs__item">Медведи на синем</li>
+                    </ul>
+
+                    <div class="card">
+                        <div class="card__photos">
+                            <div class="card-slider_big">
+                                <img src="img/item.png" alt="">
+                                <!-- <img src="img/item.png" alt="">
+                                <img src="img/item.png" alt="">
+                                <img src="img/item.png" alt=""> -->
+                            </div>
+                            <div class="cart-slider_small"></div>
+                        </div>
+                        <div class="card__info">
+                            <h1 class="page-title">Медведи на синем</h1>
+                            <div class="card__brief">
+                                <div class="presense">В наличии</div>
+                                <div class="art">Артикул: ПГ01-15</div>
+                            </div>
+                            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                            <div class="params">
+                                <table>
+                                    <tr>
+                                        <th>Состав:</th>
+                                        <td>95% Полиэстер 5% Эластан</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Производитель:</th>
+                                        <td>Китай</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Характеристики:</th>
+                                        <td>Бистрейч</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Ширина:</th>
+                                        <td>150.00 см</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Вес:</th>
+                                        <td>132 г/м2</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Минимальный заказ:</th>
+                                        <td>1 м</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <form action="" class="card-form">
+                                <div class="card-form__count">
+                                    <button>-</button>
+                                    <input type="text" value="10 м.п.">
+                                    <button>+</button>
+                                </div>
+
+                                <button type="submit"><img src="img/cart-white.svg" alt=""> Добавить в корзину</button>
+                            </form>
+                            <div class="alarm">
+                                <img src="img/alarm.svg" alt="">
+                                Минимальный заказ 10 погонных метров
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+        
+        @@include('_footer.html')
+        @@include('_scripts.html')
+    </body>
+</html>

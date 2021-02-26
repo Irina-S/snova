@@ -20,6 +20,11 @@
   body{
     // background-image: linear-gradient(80.15deg, #F0E2E0 0%, #F2EAF4 100%);
     // background-size: 100% 229px;
+    background-image: url('../img/body-bg.svg'), url('../img/dotted-pattern-rose.png');
+    background-repeat: no-repeat;
+    background-position: top 0 left 0, left 0 top 176px;
+    background-size: 100% auto, auto;
+    background-blend-mode: overlay;
   }
   
   body::before {
@@ -412,6 +417,7 @@
     border: 1px solid #F0F0F0;
     // padding:15px;
     padding: 30px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
 

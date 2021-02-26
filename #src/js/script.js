@@ -134,6 +134,9 @@ $(document).ready(function () {
   // SELECT В ФИЛЬТРАХ
   $('.filter-select').niceSelect();
 
+  // SELECT - СОРИТРОВКА
+  $('.sort-select').niceSelect();
+
   // ПОЛЗУНОК В ФИЛЬТРАХ
   $( ".range" ).slider({
     range: true,
@@ -154,5 +157,23 @@ $(document).ready(function () {
   }
 
   setRangeValues();
+
+  $('.filters__show-btn').on('click', function(){
+    if ($(this).text()=='Показать фильтры'){
+      $('.filters').fadeIn();
+      $(this).text('Скрыть фильтры');
+    }
+    else{
+      $('.filters').fadeOut();
+      $(this).text('Показать фильтры');
+    }
+  });
+
+  // $('.card-slider_big').slick({
+  //   dots:false,
+  //   arrows:false,
+  //   slidesToShow:1,
+  //   slidesToScroll:1
+  // });
   
 });
