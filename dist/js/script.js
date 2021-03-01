@@ -169,11 +169,32 @@ $(document).ready(function () {
     }
   });
 
-  // $('.card-slider_big').slick({
-  //   dots:false,
-  //   arrows:false,
-  //   slidesToShow:1,
-  //   slidesToScroll:1
-  // });
+  $('.card-slider_big').slick({
+    dots:false,
+    arrows:false,
+    slidesToShow:1,
+    slidesToScroll:1,
+    asNavFor:$('.card-slider_small'),
+    infinite:true
+  });
   
+  $('.card-slider_small').slick({
+    dots:false,
+    arrows:true,
+    slidesToShow:3,
+    slidesToScroll:3,
+    nextArrow:'<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><img src="img/arrow-right.svg" alt=""></button>',
+    prevArrow:'<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><img src="img/arrow-left.svg" alt=""></button>',
+    asNavFor:$('.card-slider_big'),
+    focusOnSelect:true,
+    infinite:true,
+    // responsive: [
+    //   {
+    //     breakpoint: 991,
+    //     settings: {
+    //       slidesToShow:2
+    //     }
+    //   }
+    // ]
+  });
 });

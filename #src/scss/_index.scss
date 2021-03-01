@@ -57,6 +57,10 @@
   button:focus{
     outline: none;
   }
+
+  // .outer-wrapper{
+  //   min-height: 100vh;
+  // }
   
   .wrapper{
     margin:0 auto;
@@ -88,7 +92,6 @@
   }
 
   .main{
-    min-height: 100vh;
     margin-top: 150px;
   }
 
