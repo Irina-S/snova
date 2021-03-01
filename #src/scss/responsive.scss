@@ -163,14 +163,23 @@
     .cart{
         &__aside{
             width: 380px;
+            padding: 30px;
+
+            
         }
+
+        &__promo{
+                input{
+                    margin-bottom: 15px;
+                }
+            }
 
         table{
             width: calc(100% - 380px - 20px - 13px);
 
             tr{
                 >:last-child{
-                    width: 10%;
+                    width: 12%;
                 }
             }
 
@@ -187,6 +196,19 @@
                 img{
                     width: 100%;
                     height: 100%;
+                }
+            }
+
+            &__brief{
+                flex-direction: column;
+
+                .presense{
+                    border: none;
+                    margin-bottom: 5px;
+                }
+
+                .art{
+                    margin-left: 0;
                 }
             }
         }
@@ -471,6 +493,20 @@
             }
         }
     }
+
+    .cart{
+        flex-direction: column;
+
+        &__aside{
+            width: 100%;
+            margin-left: 0;
+
+        }
+
+        table{
+            width: 100%;            
+        }
+    }
 }
 
 @media(max-width: 991px){
@@ -586,6 +622,30 @@
         }
     }
 
+    .cart{
+        table{
+            tr{
+                >:last-child{
+                    width: 16%;
+                }
+            }
+
+            td:first-child{
+                flex-direction: column;
+            }
+        }
+
+        &-item{
+            &__desc{
+                margin-left: 0;
+                padding-top: 10px;
+            }
+
+            &__title{
+                margin-bottom: 5px;
+            }
+        }
+    }
     
     
   }
@@ -990,6 +1050,55 @@
         font-size: 42px;
     }
 
+    .cart{
+        table{
+
+            tr{
+                display: flex;
+                // flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: stretch;
+
+                >:first-child{
+                    width: 100%;
+                    flex-direction: row;
+                }
+
+                >:nth-child(2){
+                    width: 45%;
+                }
+
+                >:nth-child(3){
+                    width: 35%;
+                }
+
+                >:last-child{
+                    width: 20%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+
+            th:not(:last-child){
+                display: none;
+            }
+
+            th:last-child{
+                width: 100%;
+                // text-align: right;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+
+        &-item{
+            &__desc{
+                margin-left: 15px;}
+        }
+    }
+
 }
 
 @media (max-width:460px){
@@ -1039,20 +1148,68 @@
     }
   }
 
-  @media (max-width:400px){
-      .contacts{
+@media (max-width:400px){
+    .contacts{
         grid-template-columns: 1fr;
         grid-template-areas:
             "block_1"
             "block_2"
             "block_3";
 
-            &_item{
-                // padding-left: 20px;
-                margin-left: 10px;
-            }
+        &_item{
+            // padding-left: 20px;
+            margin-left: 10px;
+        }
     }
-  }
+
+    .cart{
+        table{
+            tr{
+                >:nth-child(2){
+                    width: 55%;
+                }
+
+                >:nth-child(3){
+                    width: 45%;
+                }
+
+                >:last-child{
+                    width: 100%;
+                }
+            }
+        }
+
+        &-item{
+            &__cost{
+                font-size: 17px;
+            }
+
+            &__old-cost{
+                font-size: 13px;
+            }
+
+            &__count{
+                width: 135px;
+
+                input{
+                    font-size: 17px;
+                }
+            }
+        }
+
+        &__total-cost{
+            flex-direction: column;
+            padding-bottom: 0;
+        }
+
+        &__promo{
+            width: 100%;
+            input{
+                width: 100%;
+            }
+        }
+    }
+}
 
   @media (max-width:340px){
       .adv-slider{

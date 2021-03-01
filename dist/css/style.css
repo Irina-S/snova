@@ -2524,6 +2524,10 @@ button:focus {
   background: none;
 }
 
+.cart-item__del:hover {
+  cursor: pointer;
+}
+
 .cart + .main-catalog {
   margin-top: 110px;
   margin-bottom: 123px;
