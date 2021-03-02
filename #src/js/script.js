@@ -169,6 +169,8 @@ $(document).ready(function () {
     }
   });
 
+  // СЛАЙДЕРЫ В КАРТОЧКЕ ТОВАРА
+
   $('.card-slider_big').slick({
     dots:false,
     arrows:false,
@@ -196,5 +198,17 @@ $(document).ready(function () {
     //     }
     //   }
     // ]
+  });
+
+  $('[data-fancybox]').fancybox();
+
+  $('.search-block__btn').on('click', function(){
+    $('.search-block').addClass('opened');
+    $('.search-form').addClass('opened');
+  });
+
+  $('.search-form__close').on('click', function(){
+    $('.search-block').removeClass('opened');
+    $('.search-form').removeClass('opened');
   });
 });

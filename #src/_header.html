@@ -21,8 +21,75 @@
       <a href="en.html">EN</a>
     </nav>
   
-    <div class="header__search-block">
-      <img src="./img/search.svg" alt="">
+    <div class="header__search-block search-block">
+      <button class="search-block__btn"><i class="icon-font icon-search"></i></button>
+      <form action="" class="search-form">
+        <button class="search-form__submit"><i class="icon-font icon-search"></i></button>
+        <input type="text" placeholder="Я ищу...">
+        <button type="button" class="search-form__close"><i class="icon-font icon-cross"></i></button>
+      </form>
+      <div class="search-result">
+        <!-- НИЧЕГО НЕ НАЙДЕНО -->
+        <div class="search-result__failed" style="display: none;">
+          <img src="img/sad-smile.svg" alt="">
+          <span>По вашему запросу<br>
+            ничего не найдено.</span>
+        </div>
+        <!-- НАЙДЕННЫЕ ТОВАРЫ -->
+        <ul class="search-result__list">
+          <li>
+            <a href="">
+              <img src="img/product1.jpg" alt="">
+              <div class="brief">
+                <div class="title">Медведи на синем</div>
+                <div class="price-block">
+                  <span class="price price--sale">400 ₽ / м.п.</span>
+                  <span class="old-price">450 ₽ / м.п.</span>
+                </div>
+              </div>
+            </a> 
+          </li>
+
+          <li>
+            <a href="">
+              <img src="img/product1.jpg" alt="">
+              <div class="brief">
+                <div class="title">Медведи на синем</div>
+                <div class="price-block">
+                  <span class="price">400 ₽ / м.п.</span>
+                  <!-- <span class="old-price">450 ₽ / м.п.</span> -->
+                </div>
+              </div>
+            </a> 
+          </li>
+
+          <li>
+            <a href="">
+              <img src="img/product1.jpg" alt="">
+              <div class="brief">
+                <div class="title">Медведи на синем</div>
+                <div class="price-block">
+                  <span class="price">400 ₽ / м.п.</span>
+                  <!-- <span class="old-price">450 ₽ / м.п.</span> -->
+                </div>
+              </div>
+            </a> 
+          </li>
+
+          <li>
+            <a href="">
+              <img src="img/product1.jpg" alt="">
+              <div class="brief">
+                <div class="title">Медведи на синем</div>
+                <div class="price-block">
+                  <span class="price">400 ₽ / м.п.</span>
+                  <!-- <span class="old-price">450 ₽ / м.п.</span> -->
+                </div>
+              </div>
+            </a> 
+          </li>
+        </ul>
+      </div>
     </div>
   
     <div class="header__cart header-cart">

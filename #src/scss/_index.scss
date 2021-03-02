@@ -83,7 +83,7 @@
   }
   
   .header.sticky{
-    background-color: #F0E2E0;
+    background-color: #fff;
     height:100px;
   }
   
@@ -100,8 +100,8 @@
   }
   
   .main-nav{
-    margin: 8px auto 0 auto;
-    margin-left: 18%;
+    margin: 0 auto 0 auto;
+    margin-left: 12%;
     transform: translateX(-15px);
     z-index:20;
   }
@@ -591,7 +591,7 @@
   }
   
   .need-help__form .input-block:before{
-    content: "\e802";
+    content: "\e803";
     font-family: "icon-font";
     display:flex;
     align-items: center;
@@ -646,6 +646,12 @@
     position: relative;
     margin-top: 30px;
     padding-left: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 154%;
+    color: #FFFFFF;
   }
 
   .need-help input[type="checkbox"]+label::before{
@@ -657,12 +663,11 @@
     left: 0;
     border:1px solid #fff;
     transition: all .3s;
+    top: 51%;
+    left: 2px;
   }
 
   .need-help input[type="checkbox"]:checked+label::before{
-    background-image: url('../img/icons/tick.svg');
-    background-repeat: no-repeat;
-    background-size: 100% auto;
     border:none;
   }
   
@@ -829,7 +834,7 @@
   }
   
   .contacts_item--phone:before{
-    content:"\e802";
+    content:"\e803";
   }
   
   .contacts_item--phone a{
@@ -843,7 +848,7 @@
   }
   
   .contacts_item--address:before{
-    content:"\e800";
+    content:"\e801";
   }
   
   .contacts_item--shedule{
@@ -851,7 +856,7 @@
   }
   
   .contacts_item--shedule:before{
-    content: "\e801";
+    content: "\e802";
   }
   
   .footer__bottom-block{

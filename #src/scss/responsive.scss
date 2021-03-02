@@ -3,7 +3,7 @@
 
 @media (max-width:1800px){
     .main-nav{
-        margin-left: 8%;
+        margin-left: 4%;
     }
 
     .violet-blur{
@@ -31,14 +31,36 @@
     }
 }
 
-@media (max-width:1600px){
-    .main-nav{
+@media (max-width:1650px){
+    .header .logo{
+        padding: 0;
+    }
+    
+    .header .logo img{
+        width: 100px;
+    }
+
+    .lang-list {
+        margin-right: 10px;
+    }
+
+    .main-nav {
         margin-left: 4%;
 
         &__link{
-            font-size:17px;
+            font-size: 15px;
         }
     }
+}
+
+@media (max-width:1600px){
+    // .main-nav{
+    //     // margin-left: 4%;
+
+    //     &__link{
+    //         font-size:17px;
+    //     }
+    // }
 
     .adv-slider{
         right: calc(-50% + 15px);
@@ -47,6 +69,15 @@
 }
 
 @media (max-width:1500px){
+    .main-nav {
+        // margin-left: 4%;
+
+        &__link{
+            // font-size: 15px;
+            margin-right: 25px;
+        }
+    }
+
     .section-title{
         font-size:46px;
     }
@@ -213,6 +244,8 @@
             }
         }
     }
+
+
 }
 
 @media (max-width:1350px){
@@ -225,6 +258,17 @@
 
         &__link{
             font-size:15px;
+        }
+    }
+
+    .search-block{
+        width: 280px;
+    }
+
+    .main-nav{
+        &__link{
+            margin-right: 12px;
+            font-size: 14px;
         }
     }
 }
@@ -250,7 +294,8 @@
 
     .lang-list{
         margin-right: auto;
-        margin-left: 30px;
+        // margin-left: 30px;
+        margin-left: 25px;
     }
 
     .header{
@@ -507,6 +552,14 @@
             width: 100%;            
         }
     }
+
+    .contacts-page{
+        &__content{
+            .contacts_item--shedule{
+                margin-left: 0;
+            }
+        }
+    }
 }
 
 @media(max-width: 991px){
@@ -647,6 +700,29 @@
         }
     }
     
+    .gallary{
+        grid-gap: 10px;
+    }
+
+    .contacts-page{
+        &__inner{
+            flex-direction: column;
+        }
+
+        &__content{
+            margin-right: 0;
+        }
+
+        .socials{
+            margin-bottom: 50px;
+        }
+    }
+
+    #map{
+        width: 100%;
+        min-height: 600px;
+        height: 600px;
+    }
     
   }
 
@@ -842,6 +918,28 @@
         &-form{
             flex-direction: row;
         }
+    }
+
+    .contacts-page{
+        &__content{
+            .contacts{
+                &_item{
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+
+    .search-block{
+        width: auto;
+        border: none;
+    }
+
+    .search-form{
+        position: fixed;
+        top: 101px;
+        border-radius: 0;
     }
   }
   
@@ -1099,6 +1197,39 @@
         }
     }
 
+    .gallary{
+        grid-template-columns: 50% 50%;
+        grid-template-areas:   "left-big  left-big "
+                               "small-2   small-3  "
+                               "small-4   small-5  "
+                               "right-big right-big"
+                               "small-6   small-7  "
+                               "small-8   small-9 ";
+        grid-template-rows: 200px;
+    }
+
+    .about{
+        font-size: 13px;
+
+        h2{
+            font-size:25px;
+            margin-top: 40px;
+        }
+
+        p{
+            padding-bottom: 25px;
+        }
+
+        blockquote{
+            font-size: 16px;
+        }
+
+        table{
+            td, th{
+                padding: 15px;
+            }
+        }
+    }
 }
 
 @media (max-width:460px){
@@ -1209,18 +1340,37 @@
             }
         }
     }
+
+    .contacts-page{
+        &__content{
+            .contacts{
+                &_item{
+                    margin-left: 0;
+                }
+            }
+
+            .socials__item{
+                margin-right: 0;
+            }
+        }
+    }
+
+    #map{
+        min-height: 400px;
+        height: 400px;
+    }
 }
 
-  @media (max-width:340px){
-      .adv-slider{
-          width: 100vw;
+@media (max-width:340px){
+    .adv-slider{
+        width: 100vw;
 
-          .slick-slide{
-              width: 100vw !important;
+        .slick-slide{
+            width: 100vw !important;
 
-              img{
-                  width: 100vw;
-              }
-          }
-      }
-  }
+            img{
+                width: 100vw;
+            }
+        }
+    }
+}

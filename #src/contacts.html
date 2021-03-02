@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+    @@include('_head.html')
+    <body>
+        <div class="outer-wrapper">
+            @@include('_header.html')
+
+            <main class="main contacts-page">
+                <div class="wrapper">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Главная</a></li>
+                        <li class="breadcrumbs__item">Контакты</li>
+                    </ul>
+
+                    <div class="contacts-page__inner">
+                        <div class="contacts-page__content">
+                            <h1 class="page-title">Контакты</h1>
+
+                            <ul class="contacts">
+                                <li class="contacts_item contacts_item--phone">
+                                  <a href="tel:8 (964) 465-33-00">8 (964) 465-33-00</a>
+                                </li>
+                      
+                                <li class="contacts_item contacts_item--address">г. Чита, ул. Костюшко-Григоровича, 44, ТЦ Фестиваль бутик № 55</li>
+                      
+                                <li class="contacts_item contacts_item--shedule">
+                                  <b>Режим работы:</b><br/>
+                                  пн. – пт. 10:00–18:00 <br/>
+                                  сб. 10:00–15:00, <br/>
+                                  вс — выходной</li>
+                              </ul>
+
+                              <div class="footer-title">Мы в социальных сетях:</div>
+  
+                            <ul class="socials">
+                    
+                                <li class="socials__item">
+                                <span class="socials__title">Машинная вышивка</span>
+                                <a href="#" class="socials__link"><i class="icon-font icon-instagram"></i> <span>smirnova_s_nova</span></a>
+                                </li>
+                    
+                                <li class="socials__item">
+                                <span class="socials__title">Трикотажные ткани</span>
+                                <a href="#" class="socials__link"><i class="icon-font icon-instagram"></i> <span>s_nova_tkani</span></a>
+                                </li>
+                    
+                                <li class="socials__item">
+                                <span class="socials__title">Детская одежда</span>
+                                <a href="#" class="socials__link"><i class="icon-font icon-instagram"></i> <span>mishkin.domik</span></a>
+                                </li>
+                    
+                                <li class="socials__item">
+                                <span class="socials__title">Группа Вконтакте</span>
+                                <a href="#" class="socials__link"><i class="icon-font icon-vkontakte"></i> <span>mishkin.domik</span></a>
+                                </li>
+                    
+                            </ul>
+                        </div>
+                        <div id="map"></div>
+                    </div>
+                </div>
+
+                <div class="need-help">
+                        <div class="need-help__inner">
+                        <div class="need-help__text">
+                            <h2 class="need-help__title">Нужна помощь?</h2>
+                            <span class="need-help__desc">Оставьте заявку, и мы вам перезвоним</span>
+                        </div>
+                        <form class="need-help__form">
+                            <div class="input-block">
+                            <input name="phone" type="text" placeholder="Введите телефон">
+                            </div>
+                            <button class="btn" type="submit">Оставить заявку  <img src="img/icons/arrow-right-black.svg" alt=""></i></button>
+                            <input type="checkbox" name="agreement" id="agreement" checked>
+                            <label for="agreement">
+                                <span class="agreement">Нажимая на кнопку "Оставить заявку", вы соглашаетесь с <a href="#">политикой конфиденциальности</a></span>
+                            </label>
+                        </form>
+                        </div>
+                    </div>
+            </main>
+        </div>
+        
+        @@include('_footer.html')
+        @@include('_scripts.html')
+    </body>
+</html>
