@@ -1354,6 +1354,8 @@ button:focus {
 .search-result__list li {
   width: 100%;
   list-style: none;
+  padding: 5px 0;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .search-result__list li a {
@@ -1362,7 +1364,7 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 15px 0;
+  padding: 10px;
   border-radius: 10px;
   -webkit-transition: all .3s;
   -o-transition: all .3s;
@@ -1436,6 +1438,15 @@ button:focus {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.search-result__see-all {
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.search-result__see-all:hover {
+  background: transparent;
 }
 
 .main-nav-btn {
