@@ -226,7 +226,12 @@
 
     &__see-all{
         font-size: 14px;
-        padding: 10px 0;
+        line-height: 186%;
+        padding: 10px 0 !important;
+
+        i{
+            margin-left: 9px;
+        }
 
         &:hover{
             background: transparent;
@@ -1748,3 +1753,8 @@
     overflow: hidden;
 }
 
+.is-order{
+    background: none;
+}
+
+@import "_order.scss";

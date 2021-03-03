@@ -27,6 +27,14 @@
     cursor: pointer;
     transition: .3s;
 
+    &[disabled]{
+        opacity: .3;
+
+        &:hover{
+            cursor: default;
+        }
+    }
+
     i{
       margin-left: 10px;
     }
@@ -84,8 +92,9 @@ input[type="checkbox"]{
         &::before{
             content: "";
             left: 0;
-            top: 50%;
-            transform: translateY(-50%);
+            // top: 50%;
+            // transform: translateY(-50%);
+            top: 5px;
             position: absolute;
             width: 18px;
             height: 18px;
@@ -99,8 +108,8 @@ input[type="checkbox"]{
         &::after{
             position: absolute;
             left: 5px;
-            top: 50%;
-            transform: scale(0) translateY(-50%) translateX(50%);
+            top: 14px;
+            transform: scale(0);
             content:"";
             width: 9px;
             height: 7px;

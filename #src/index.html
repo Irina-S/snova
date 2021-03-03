@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ru">
 @@include('_head.html')
-<body class="is-index">
+<body>
     @@include('_header.html')
 
     <main class="main">
@@ -303,7 +303,8 @@
         </div>
         <form class="need-help__form">
             <div class="input-block">
-            <input name="phone" type="text" placeholder="Введите телефон">
+                <input name="phone" type="text" placeholder="Введите телефон" id="phone">
+                <i class="icon-font icon-phone"></i>
             </div>
             <button class="btn" type="submit">Оставить заявку  <img src="img/icons/arrow-right-black.svg" alt=""></i></button>
             <input type="checkbox" name="agreement" id="agreement" checked>

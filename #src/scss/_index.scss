@@ -11,20 +11,15 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
+    background-image: url('../img/body-bg.svg'), url('../img/dotted-pattern-rose.png');
+    background-repeat: no-repeat;
+    background-position: top 0 left 0, left 0 top 176px;
+    background-size: 100% 229px, auto;
+    background-blend-mode: overlay;
   }
 
   body.dark {
     position: relative;
-  }
-
-  body{
-    // background-image: linear-gradient(80.15deg, #F0E2E0 0%, #F2EAF4 100%);
-    // background-size: 100% 229px;
-    background-image: url('../img/body-bg.svg'), url('../img/dotted-pattern-rose.png');
-    background-repeat: no-repeat;
-    background-position: top 0 left 0, left 0 top 176px;
-    background-size: 100% auto, auto;
-    background-blend-mode: overlay;
   }
   
   body::before {
@@ -587,10 +582,12 @@
   @media(max-width: 1400px){
     .need-help__form .input-block{
       flex:100% 0 0;
+
+      
     }
   }
   
-  .need-help__form .input-block:before{
+  .need-help__form .input-block i{
     content: "\e803";
     font-family: "icon-font";
     display:flex;
@@ -606,21 +603,49 @@
   }
   
   .need-help__form input{
+    // position: relative;
     height:70px;
     border-radius: 35px;
     padding-left:50px;
+    padding-right: 30px;
     background: #DF444D;
     border: 1px solid #FFFFFF;
-    font-size: 18px;
-    line-height: 24px;
-    color: #FFFFFF;
+    // font-size: 18px;
+    // line-height: 24px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 191%;
+    color: #111111;
+    // color: #FFFFFF;
     width:100%;
     outline: none;
+    transition: all .3s;
 
     
     &::placeholder{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 233%;
       color:#fff;
       outline: none;
+      transition: all .3s;
+    }
+
+    &:hover, &:focus, &:active{
+      background: #FFFFFF;
+
+      &::placeholder{
+        color: #A9A9A9;
+      }
+
+      &+i{
+        color: #111;
+      }
+
     }
   }
   

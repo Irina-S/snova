@@ -26,7 +26,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-cross:before {
+.icon-cross-rose:before {
   content: '\e800';
 }
 
@@ -79,6 +79,18 @@
 }
 
 /* '' */
+
+.icon-arrow-left:before {
+  content: '\e80d';
+}
+
+/* '' */
+
+.icon-arrow:before {
+  content: '\e80e';
+}
+
+/* '' */
 
 .icon-youtube-play:before {
   content: '\f16a';
