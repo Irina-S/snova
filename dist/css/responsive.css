@@ -1437,7 +1437,8 @@
     width: 135px;
   }
 
-  .cart-item__count input {
+  .cart-item__count input,
+  .cart-item__count span {
     font-size: 17px;
   }
 

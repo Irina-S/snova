@@ -671,6 +671,7 @@ button:focus {
 }
 
 .main-catalog__item .title {
+  text-decoration: none;
   font-family: Yeseva One, cursive;
   font-style: normal;
   font-weight: normal;
@@ -2291,10 +2292,11 @@ button:focus {
   border-radius: 40px;
   position: relative;
   margin-right: 30px;
+  text-align: center;
 }
 
-.card-form__count input {
-  width: 100%;
+.card-form__count input,
+.card-form__count span {
   height: 100%;
   border: none;
   outline: none;
@@ -2306,6 +2308,10 @@ button:focus {
   font-size: 21px;
   line-height: 143%;
   color: #818181;
+}
+
+.card-form__count input {
+  max-width: 50px;
 }
 
 .card-form__count button {
@@ -2761,10 +2767,11 @@ button:focus {
   position: relative;
   display: inline-block;
   margin-top: 7px;
+  text-align: center;
 }
 
-.cart-item__count input {
-  width: 100%;
+.cart-item__count input,
+.cart-item__count span {
   height: 100%;
   border: none;
   outline: none;
@@ -2776,6 +2783,10 @@ button:focus {
   line-height: 143%;
   text-align: center;
   color: #818181;
+}
+
+.cart-item__count input {
+  max-width: 40px;
 }
 
 .cart-item__count button {
@@ -2865,6 +2876,7 @@ button:focus {
   border: none;
   outline: none;
   background: none;
+  display: block;
 }
 
 .cart-item__del:hover {
