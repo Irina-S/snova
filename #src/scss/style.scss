@@ -247,7 +247,7 @@
     position: relative;
     background-image: url('../img/adv-slider-bg.png'), url('../img/dotted-pattern-rose.png');
     background-repeat: no-repeat;
-    background-position: top 100px left 0, top 0 left 5px;
+    background-position: top 110px left 0, top 9px left 5px;
     background-blend-mode: overlay;
     margin-top: 56px;
     max-height: 625px;
@@ -260,8 +260,8 @@
 
     &__title{
         text-align: left;
-        margin-bottom: 4px;
-        margin-top: 220px;
+        margin-bottom: 7px;
+        margin-top: 225px;
         font-size: 50px;
 
         &::after{
@@ -275,8 +275,8 @@
     }
 
     &-slider{
-        top: -436px;
-        right: calc(-33% + 4px);
+        top: -432px;
+        right: calc(-33% + 0px);
         position: relative;
         width:77%;
         height: 450px;
@@ -284,6 +284,7 @@
         .slick-slide{
             // width:370px !important;
             outline: none;
+            padding:0 10px;
             // margin:0 10px;
         }
 

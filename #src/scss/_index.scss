@@ -87,7 +87,7 @@
   }
 
   .main{
-    margin-top: 150px;
+    // margin-top: 150px;
   }
 
   .is-index .main{
@@ -219,9 +219,12 @@
   }
   
   .services-list__title{
+    font-family: Montserrat;
+    font-style: normal;
     font-weight: 300;
-    font-size: 32px;
-    line-height: 175%;
+    font-size: 30px;
+    line-height:187%;
+    text-align: center;
     text-transform: uppercase;
     color: #111111;
     position: relative;
@@ -262,6 +265,7 @@
     list-style:none;
     text-align: center;
     position: relative;
+    margin-top: -7px;
   }
   
   .services-list__list:after{
@@ -276,14 +280,22 @@
   }
   
   .services-list_item{
-    line-height:74px;
+    // line-height:74px;
+    margin-left: 54px;
   }
   
   .services-list_item a{
-    font-family: 'Yeseva One', cursive;
-    font-size: 49px;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 170%;
     text-align: center;
     color: #111111;
+    // font-family: 'Yeseva One', cursive;
+    // font-size: 49px;
+    // text-align: center;
+    // color: #111111;
     text-decoration: none;
     -webkit-transition: .3s;
     -moz-transition: .3s;
@@ -315,6 +327,8 @@
     img{
       width: 300px;
       height: 300px;
+      left: -13px;
+      top: 24px;
     }
   }
   
@@ -325,18 +339,20 @@
     img{
       width: 350px;
       height: 350px;
+      right: -111px; 
+      bottom: 26px;
     }
   }
   
 .violet-blur,
 .orange-blur{
     content: "";
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 168px;
     display: block;
     position: absolute;
-    bottom:-80px;
-    left:-80px;
+    top: 249px;
+    left: -110px;
     background-image: url(../img/violet-blur.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -345,9 +361,9 @@
   .orange-blur{
     width: 120px;
     height: 120px;
-    top: 30px;
     background-image: url(../img/orange-blur.png);
-    right:-40px;
+    right: -193px;
+    top: 316px;
     left:auto;
   }
   
@@ -359,17 +375,27 @@
     // font-size: 16px;
     // line-height: 68px;
     text-align: center;
+
+    i{
+      font-size: 7px;
+      position: relative;
+      bottom: 5px;
+    }
   }
-  
-  // .services-list__look-all:hover,
-  // .main-catalog__see-all:hover{
-  //   opacity:0.9;
-  //   text-decoration: underline solid #DF444D;
-  // }
+
+  .services-list__look-all{
+    margin-left: 48px;
+    margin-top: 14px;
+  }
+
+  .main-catalog__see-all{
+    margin-top: 22px;
+  }
+
   
   .main-catalog{
     // margin-top: 70px;
-    margin-top: 154px;
+    margin-top: 165px;
   }
   
   .section-title{
@@ -431,7 +457,10 @@
   }
   
   .main-catalog__item .photo img{
-    width:100%;
+    width: 101%;
+    max-width:101%;
+    max-height: 100%;
+    object-fit: contain;
     height:auto;
   }
   
@@ -450,6 +479,10 @@
     line-height: 24px;
     color: #111111;
     margin-top: 24px;
+  }
+
+  .main-catalog__item .title-price{
+    margin-top: 19px;
   }
   
   .main-catalog__item .price-block{
@@ -471,8 +504,9 @@
     border-radius: 50%;
     border: 2px solid #FCECED;
     background-color: transparent;
-    margin-top: 20px;
+    margin-top: 16px;
     cursor: pointer;
+    margin-right: -3px;
     transition: all .3s;
 
     &:hover{
@@ -509,7 +543,7 @@
   }
   
   .need-help{
-    margin-top: 130px;
+    margin-top: 132px;
     background: linear-gradient(to bottom, #fff 0%, #fff 50%, #F8F0EF 50%, #F8F0EF 100%);
     overflow: hidden;
   }
@@ -569,14 +603,14 @@
     flex-wrap:wrap;
     position: relative;
     z-index: 3;
-    width: 53%;
+    width: 52%;
     margin-right: 46px;
     margin-top: 7px;
   }
   
   .need-help__form .input-block{
     position: relative;
-    flex: 50% 0 0;
+    flex: 49% 0 0;
     margin-right: 20px;
   }
   
@@ -597,7 +631,7 @@
     width: 30px;
     height: 30px;
     position: absolute;
-    left:15px;
+    left: 23px;
     top:50%;
     transform: translateY(-50%);
     font-size: 19px;
@@ -607,7 +641,7 @@
     // position: relative;
     height:70px;
     border-radius: 35px;
-    padding-left:50px;
+    padding-left:60px;
     padding-right: 30px;
     background: #DF444D;
     border: 1px solid #FFFFFF;
@@ -689,8 +723,13 @@
     left: 0;
     border:1px solid #fff;
     transition: all .3s;
-    top: 51%;
-    left: 2px;
+    top: 4px;
+    left: -2px;
+  }
+
+  .need-help input[type="checkbox"]+label::after{
+    left: -6px;
+    top: 11px;
   }
 
   .need-help input[type="checkbox"]:checked+label::before{
@@ -726,12 +765,13 @@
     font-weight: 300;
     font-size: 14px;
     color: #111111;
+    margin-bottom: auto;
   }
   
   .footer__top-block{
     list-style: none;
     display: flex;
-    padding: 50px 0;
+    padding: 60px 0;
     padding-top: 127px;
     justify-content: space-evenly;
     width: 100%;
@@ -746,8 +786,16 @@
        margin-right: 15px;
     }
 
+    &:nth-child(2){
+      flex-basis: 42%;
+    }
+
     &:last-child{
       margin-right: 0;
+
+      .footer-title{
+        margin-left: 10px;
+      }
     }
   }
   
@@ -768,12 +816,23 @@
   }
   
   .socials__item{
-    flex: calc(50% - 15px);
-    margin-right: 15px;
+    flex: calc(48% - 25px);
+    margin-right: 0px;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
     align-items: flex-start;
+
+    &:nth-child(n+3){
+      margin-top: 30px;
+    }
+
+    &:nth-child(odd){
+      flex: calc(44% - 37px);
+      margin-right: 25px;
+    }
+
+
   }
   
   .socials__title{
@@ -791,7 +850,7 @@
     color: #111111;
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 8px;
     
 
     &:hover{
@@ -814,7 +873,7 @@
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    margin-right: 5px;
+    margin-right: 8px;
   }
   
   .socials__link span{
@@ -826,16 +885,17 @@
     display:grid;
     grid-template-areas:  "block_1 block_3"
     "block_2 block_3";
+    grid-template-columns: 68% 32%;
     list-style: none;
   }
   
   .contacts_item{
-    margin-top: 20px;
+    margin-top: 26px;
     font-size: 15px;
     line-height: 24px;
-    margin-right:15px;
+    // margin-right:15px;
     position: relative;
-    padding-left:40px;
+    padding-left: 28px;
   }
   
   .contacts_item:before{
