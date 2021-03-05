@@ -362,8 +362,9 @@
     width: 120px;
     height: 120px;
     background-image: url(../img/orange-blur.png);
-    right: -193px;
-    top: 316px;
+    right: -193px; 
+    top: auto;
+    bottom: 225px;
     left:auto;
   }
   
@@ -563,8 +564,8 @@
   .need-help__inner:before{
     content:"";
     display:block;
-    width: 350px;
-    height: 350px;
+    top: -103px;
+    right: -174px;
     position: absolute;
     top: -100px;
     right: -200px;
@@ -787,7 +788,7 @@
     }
 
     &:nth-child(2){
-      flex-basis: 42%;
+      flex-basis: 45%;
     }
 
     &:last-child{
@@ -829,7 +830,7 @@
 
     &:nth-child(odd){
       flex: calc(44% - 37px);
-      margin-right: 25px;
+      margin-right: 50px;
     }
 
 
@@ -885,7 +886,8 @@
     display:grid;
     grid-template-areas:  "block_1 block_3"
     "block_2 block_3";
-    grid-template-columns: 68% 32%;
+    grid-template-columns: 68% 33%;
+    grid-template-rows: 65px;
     list-style: none;
   }
   
@@ -931,6 +933,7 @@
   
   .contacts_item--address{
     grid-area: block_2;
+    padding-right: 46px;
   }
   
   .contacts_item--address:before{

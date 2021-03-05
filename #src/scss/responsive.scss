@@ -13,12 +13,12 @@
         margin-left: 4%;
     }
 
-    .violet-blur{
-        left: 20px;
-    }
+    // .violet-blur{
+    //     left: 20px;
+    // }
 
     .orange-blur{
-        right: 20px;
+        // right: 20px;
     }
 
     .adv{
@@ -458,6 +458,11 @@
         width: 340px;
         right: unset;
         margin-left: auto;
+
+        .slick-slide {
+            outline: none;
+            padding: 0;
+        }
     }
 
     .main-catalog{
@@ -510,7 +515,7 @@
 
             &:last-child{
                 flex-basis: 100%;
-                margin-top: 30px;
+                margin-top: 45px;
 
                 .footer-title{
                     text-align: center;

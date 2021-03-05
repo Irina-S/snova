@@ -26,7 +26,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-cross-rose:before {
+.icon-cross:before {
   content: '\e800';
 }
 

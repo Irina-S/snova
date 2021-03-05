@@ -3,14 +3,6 @@
     margin-left: 4%;
   }
 
-  .violet-blur {
-    left: 20px;
-  }
-
-  .orange-blur {
-    right: 20px;
-  }
-
   .adv-slider {
     right: calc(-28% + 4px);
   }
@@ -396,6 +388,11 @@
     margin-left: auto;
   }
 
+  .adv-slider .slick-slide {
+    outline: none;
+    padding: 0;
+  }
+
   .main-catalog__item {
     padding: 15px;
   }
@@ -450,7 +447,7 @@
   .footer-top-block__item:last-child {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    margin-top: 30px;
+    margin-top: 45px;
   }
 
   .footer-top-block__item:last-child .footer-title {

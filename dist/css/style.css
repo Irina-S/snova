@@ -579,7 +579,8 @@ button:focus {
   height: 120px;
   background-image: url(../img/orange-blur.png);
   right: -193px;
-  top: 316px;
+  top: auto;
+  bottom: 225px;
   left: auto;
 }
 
@@ -805,8 +806,8 @@ button:focus {
 .need-help__inner:before {
   content: "";
   display: block;
-  width: 350px;
-  height: 350px;
+  top: -103px;
+  right: -174px;
   position: absolute;
   top: -100px;
   right: -200px;
@@ -1101,8 +1102,8 @@ button:focus {
 }
 
 .footer-top-block__item:nth-child(2) {
-  -ms-flex-preferred-size: 42%;
-      flex-basis: 42%;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
 }
 
 .footer-top-block__item:last-child {
@@ -1158,7 +1159,7 @@ button:focus {
   -webkit-box-flex: calc(44% - 37px);
       -ms-flex: calc(44% - 37px);
           flex: calc(44% - 37px);
-  margin-right: 25px;
+  margin-right: 50px;
 }
 
 .socials__title {
@@ -1216,7 +1217,8 @@ button:focus {
 .contacts {
   display: grid;
   grid-template-areas: "block_1 block_3" "block_2 block_3";
-  grid-template-columns: 68% 32%;
+  grid-template-columns: 68% 33%;
+  grid-template-rows: 65px;
   list-style: none;
 }
 
@@ -1266,6 +1268,7 @@ button:focus {
 
 .contacts_item--address {
   grid-area: block_2;
+  padding-right: 46px;
 }
 
 .contacts_item--address:before {
@@ -1335,7 +1338,7 @@ button:focus {
 
 .search-block {
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   min-height: 40px;
   height: 40px;
   display: -webkit-box;
@@ -1356,7 +1359,6 @@ button:focus {
 .search-block.opened {
   border-color: transparent;
   height: auto;
-  overflow: visible;
 }
 
 .search-block.opened .search-result {

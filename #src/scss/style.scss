@@ -5,7 +5,7 @@
 
 .search-block{
     position:relative;
-    overflow: hidden;
+    overflow-x: hidden;
     min-height: 40px;
     height: 40px;
     display: flex;
@@ -17,7 +17,6 @@
     &.opened{
         border-color: transparent;
         height: auto;
-        overflow: visible;
 
         .search-result{
             display: block;
