@@ -73,7 +73,7 @@
     margin-bottom: 47px;
 }
 
-input[type="checkbox"]{
+input[type="checkbox"], input[type="radio"]{
     display: none;
 
     &+label{
@@ -128,11 +128,7 @@ input[type="checkbox"]{
 
         }
 
-        &.round{
-            &::before{
-                border-radius: 50%;
-            }
-        }
+
     }
 
     &:checked{
@@ -166,4 +162,10 @@ input[type="checkbox"]{
     
 
     
+}
+
+input[type="radio"]+label{
+    &::before{
+        border-radius: 50%;
+    }
 }

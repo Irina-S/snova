@@ -29,7 +29,7 @@
     margin-left: 0;
   }
 
-  .adv-slider {
+  .avd-slider {
     right: calc(-28% + 4px);
   }
 
@@ -65,7 +65,7 @@
 }
 
 @media (max-width: 1600px) {
-  .adv-slider {
+  .avd-slider {
     right: calc(-50% + 15px);
     width: 51%;
   }
@@ -103,6 +103,14 @@
     height: 280px;
   }
 
+  .orange-blur {
+    top: -30px;
+  }
+
+  .violet-blur {
+    bottom: 300px;
+  }
+
   .services-list_item {
     line-height: 68px;
   }
@@ -111,7 +119,7 @@
     font-size: 40px;
   }
 
-  .adv-slider {
+  .avd-slider {
     right: calc(-42% + 15px);
     width: 62%;
   }
@@ -396,6 +404,14 @@
     height: 250px;
   }
 
+  .orange-blur {
+    top: -30px;
+  }
+
+  .violet-blur {
+    bottom: 300px;
+  }
+
   .services-list_item {
     line-height: 58px;
   }
@@ -408,13 +424,13 @@
     height: 75px;
   }
 
-  .adv-slider {
+  .avd-slider {
     width: 340px;
     right: unset;
     margin-left: auto;
   }
 
-  .adv-slider .slick-slide {
+  .avd-slider .slick-slide {
     outline: none;
     padding: 0;
   }
@@ -838,27 +854,31 @@
     height: 120px;
   }
 
-  .adv__title {
+  .orange-blur {
+    bottom: 145px;
+  }
+
+  .avd__title {
     margin-top: 110px;
     text-align: center;
   }
 
-  .adv__text {
+  .avd__text {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
 
-  .adv-slider {
+  .avd-slider {
     position: static;
     margin: 20px auto 0;
   }
 
-  .adv-slider__nav {
+  .avd-slider__nav {
     margin-top: 10px;
   }
 
-  .adv-slider__nav .slick-arrow {
+  .avd-slider__nav .slick-arrow {
     width: 75px;
     height: 50px;
   }
@@ -1028,25 +1048,30 @@
     height: 100px;
   }
 
+  .img1-block img {
+    top: 0;
+  }
+
   .img2-block {
     height: 120px;
   }
 
   .violet-blur {
-    left: -120px;
+    top: 45px;
+    left: -150px;
     width: 120px;
     height: 120px;
   }
 
   .orange-blur {
-    right: -100px;
-    bottom: 100px;
+    right: -90px;
+    bottom: 50px;
     width: 100px;
     height: 100px;
   }
 
-  .adv {
-    background-image: url("../img/adv-slider-bg.png");
+  .avd {
+    background-image: url("../img/avd-slider-bg.png");
     background-repeat: no-repeat;
     background-position: top 100px left 0;
   }
@@ -1510,15 +1535,15 @@
 }
 
 @media (max-width: 340px) {
-  .adv-slider {
+  .avd-slider {
     width: 100vw;
   }
 
-  .adv-slider .slick-slide {
+  .avd-slider .slick-slide {
     width: 100vw !important;
   }
 
-  .adv-slider .slick-slide img {
+  .avd-slider .slick-slide img {
     width: 100vw;
   }
 }

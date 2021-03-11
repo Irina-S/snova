@@ -44,7 +44,7 @@
         margin-left: 0;
     }
 
-    .adv{
+    .avd{
         &-slider{
             right: calc(-28% + 4px);
         }
@@ -92,7 +92,7 @@
     //     }
     // }
 
-    .adv-slider{
+    .avd-slider{
         right: calc(-50% + 15px);
         width: 51%;
     }
@@ -135,6 +135,14 @@
         }
     }
 
+    .orange-blur{
+        top: -30px;
+    }
+
+    .violet-blur{
+        bottom: 300px;
+    }
+
     .services-list{
         &_item{
             line-height: 68px;
@@ -145,7 +153,7 @@
         }
     }
 
-    .adv-slider {
+    .avd-slider {
         right: calc(-42% + 15px);
         width: 62%;
     }
@@ -461,6 +469,14 @@
         }
     }
 
+        .orange-blur{
+        top: -30px;
+    }
+
+    .violet-blur{
+        bottom: 300px;
+    }
+
     .services-list{
         &_item{
             line-height: 58px;
@@ -477,7 +493,7 @@
         }
     }
 
-    .adv-slider{
+    .avd-slider{
         width: 340px;
         right: unset;
         margin-left: auto;
@@ -921,7 +937,11 @@
         }
     }
 
-    .adv{
+    .orange-blur{
+        bottom: 145px;
+    }
+
+    .avd{
 
         &__title{
             margin-top: 110px;
@@ -1122,6 +1142,10 @@
     .img1-block{
         align-self: unset;
         height: 100px;
+
+        img{
+            top: 0;
+        }
     }
 
     .img2-block{
@@ -1129,22 +1153,22 @@
     }
 
     .violet-blur{
-        // left: 30px;
-        left: -120px;
+        top: 45px;
+        left: -150px;
         width: 120px;
         height: 120px;
     }
 
     .orange-blur{
         // right: 30px;
-        right: -100px;
-        bottom: 100px;
+        right: -90px;
+        bottom: 50px;
         width: 100px;
         height: 100px;
     }
 
-    .adv{
-        background-image: url('../img/adv-slider-bg.png');
+    .avd{
+        background-image: url('../img/avd-slider-bg.png');
         background-repeat: no-repeat;
         background-position: top 100px left 0;
     }
@@ -1600,7 +1624,7 @@
 }
 
 @media (max-width:340px){
-    .adv-slider{
+    .avd-slider{
         width: 100vw;
 
         .slick-slide{

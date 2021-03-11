@@ -242,9 +242,9 @@
     display: none;
 }
 
-.adv{
+.avd{
     position: relative;
-    background-image: url('../img/adv-slider-bg.png'), url('../img/dotted-pattern-rose.png');
+    background-image: url('../img/avd-slider-bg.png'), url('../img/dotted-pattern-rose.png');
     background-repeat: no-repeat;
     background-position: top 110px left 0, top 9px left 5px;
     background-blend-mode: overlay;
@@ -373,6 +373,7 @@
         text-decoration: none;
         font-weight: 300;
         position: relative;
+        color: #818181;
 
         &::after {
             content: "";
@@ -409,7 +410,7 @@
     padding-bottom: 50px;
     border: 1px solid #F0F0F0;
 
-    &__range, &__checkbox, &__select{
+    &__range, &__checkbox, &__radio, &__select{
         padding: 35px 30px;
 
         &:not(:last-child){
