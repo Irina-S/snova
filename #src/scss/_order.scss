@@ -319,19 +319,19 @@ label sup{
 }
 
 .radio-group label {
-  padding: 20px 30px 20px 75px;
-  font-family: Yeseva One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 150%;
-  color: #111111;
-  position: relative;
-  width: 100%;
-  background: #FFFFFF;
-  border: 1.5px solid #DCDCDC;
-  border-radius: 30px;
-  transition:all .3s;
+  padding: 20px 30px 20px 75px !important ;
+  font-family: Yeseva One !important; 
+  font-style: normal !important ;
+  font-weight: normal !important ;
+  font-size: 16px !important ;
+  line-height: 150% !important ;
+  color: #111111 !important ;
+  position: relative !important ;
+  width: 100% !important ;
+  background: #FFFFFF !important ;
+  border: 1.5px solid #DCDCDC !important ;
+  border-radius: 30px !important ;
+  transition:all .3s !important ;
   // margin-top: 25px;
 }
 

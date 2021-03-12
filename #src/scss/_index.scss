@@ -671,7 +671,7 @@
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
-      line-height: 233%;
+      line-height: 70px;
       color:#fff;
       outline: none;
       transition: all .3s;
@@ -735,13 +735,13 @@
   }
 
   .need-help input[type="checkbox"]+label::after{
-    left: -6px;
+    left: -4px;
     top: 11px;
   }
 
-  .need-help input[type="checkbox"]:checked+label::before{
-    border:none;
-  }
+  // .need-help input[type="checkbox"]:checked+label::before{
+  //   border:none;
+  // }
   
   .need-help__form .agreement{
     font-weight: 300;

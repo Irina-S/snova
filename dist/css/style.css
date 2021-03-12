@@ -87,12 +87,12 @@
 }
 
 input[type="checkbox"],
-input[type="radio"] {
+input[type="radio"].round {
   display: none;
 }
 
 input[type="checkbox"] + label,
-input[type="radio"] + label {
+input[type="radio"].round + label {
   display: block;
   position: relative;
   font-family: Montserrat;
@@ -108,7 +108,7 @@ input[type="radio"] + label {
 }
 
 input[type="checkbox"] + label::before,
-input[type="radio"] + label::before {
+input[type="radio"].round + label::before {
   content: "";
   left: 0;
   top: 5px;
@@ -126,7 +126,7 @@ input[type="radio"] + label::before {
 }
 
 input[type="checkbox"] + label::after,
-input[type="radio"] + label::after {
+input[type="radio"].round + label::after {
   position: absolute;
   left: 5px;
   top: 14px;
@@ -146,39 +146,39 @@ input[type="radio"] + label::after {
 }
 
 input[type="checkbox"] + label:hover,
-input[type="radio"] + label:hover {
+input[type="radio"].round + label:hover {
   color: #F06A72;
 }
 
 input[type="checkbox"] + label:hover::before,
-input[type="radio"] + label:hover::before {
+input[type="radio"].round + label:hover::before {
   opacity: 1;
 }
 
 input[type="checkbox"]:checked + label::before,
-input[type="radio"]:checked + label::before {
+input[type="radio"].round:checked + label::before {
   background-color: #DF444D;
   opacity: 1;
 }
 
 input[type="checkbox"]:checked + label::after,
-input[type="radio"]:checked + label::after {
+input[type="radio"].round:checked + label::after {
   -webkit-transform: scale(1) translateY(-50%) translateX(50%);
       -ms-transform: scale(1) translateY(-50%) translateX(50%);
           transform: scale(1) translateY(-50%) translateX(50%);
 }
 
 input[type="checkbox"]:checked:hover,
-input[type="radio"]:checked:hover {
+input[type="radio"].round:checked:hover {
   color: #F06A72;
 }
 
 input[type="checkbox"]:checked:hover + label::before,
-input[type="radio"]:checked:hover + label::before {
+input[type="radio"].round:checked:hover + label::before {
   opacity: 0.3;
 }
 
-input[type="radio"] + label::before {
+input[type="radio"].round + label::before {
   border-radius: 50%;
 }
 
@@ -929,7 +929,7 @@ button:focus {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 233%;
+  line-height: 70px;
   color: #fff;
   outline: none;
   -webkit-transition: all .3s;
@@ -941,7 +941,7 @@ button:focus {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 233%;
+  line-height: 70px;
   color: #fff;
   outline: none;
   -moz-transition: all .3s;
@@ -953,7 +953,7 @@ button:focus {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 233%;
+  line-height: 70px;
   color: #fff;
   outline: none;
   -ms-transition: all .3s;
@@ -965,7 +965,7 @@ button:focus {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 233%;
+  line-height: 70px;
   color: #fff;
   outline: none;
   -ms-transition: all .3s;
@@ -977,7 +977,7 @@ button:focus {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 233%;
+  line-height: 70px;
   color: #fff;
   outline: none;
   -webkit-transition: all .3s;
@@ -1055,12 +1055,8 @@ button:focus {
 }
 
 .need-help input[type="checkbox"] + label::after {
-  left: -6px;
+  left: -4px;
   top: 11px;
-}
-
-.need-help input[type="checkbox"]:checked + label::before {
-  border: none;
 }
 
 .need-help__form .agreement {
@@ -3554,21 +3550,21 @@ label sup {
 }
 
 .radio-group label {
-  padding: 20px 30px 20px 75px;
-  font-family: Yeseva One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 150%;
-  color: #111111;
-  position: relative;
-  width: 100%;
-  background: #FFFFFF;
-  border: 1.5px solid #DCDCDC;
-  border-radius: 30px;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
+  padding: 20px 30px 20px 75px !important;
+  font-family: Yeseva One !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  line-height: 150% !important;
+  color: #111111 !important;
+  position: relative !important;
+  width: 100% !important;
+  background: #FFFFFF !important;
+  border: 1.5px solid #DCDCDC !important;
+  border-radius: 30px !important;
+  -webkit-transition: all .3s !important;
+  -o-transition: all .3s !important;
+  transition: all .3s !important;
 }
 
 .radio-group label:before {
